@@ -1,0 +1,59 @@
+.container {
+  border: 2px solid white;
+  min-width: 50rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 2rem;
+}
+
+.content {
+  background-color: #ffffff;
+  height: 50px;
+  width: 100%;
+  height: 55vh;
+  border-radius: 10px;
+  border-bottom: 2px #ffff;
+}
+
+.text {
+  padding: 4rem 5rem;
+}
+
+.title {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.title span {
+  margin-left: 0.5rem;
+  background-color: #c83658;
+  padding: 0.5rem 1rem 0.5rem;
+  color: #fff;
+}
+
+.description {
+  text-align: justify;
+}
+
+.description span {
+  color: #c83658 ;
+  font-weight: 500;
+}
+
+.textTech {
+  margin-top: 1.5rem;
+}
+
+.textTech h3 {
+  margin: 1rem 0;
+}
+
+.textTech ul li {
+  margin-left: 1.1rem;
+}
+
+.arrowIcon {
+  color: #c83658 ;
+}

@@ -1,0 +1,58 @@
+.container {
+  border: 2px solid white;
+  min-width: 50rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 2rem;
+}
+
+.containerInput {
+  background-color: #fff ;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.containerInput input {
+  width: 80%;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  color: black;
+}
+
+.containerInput button {
+  background-color: #c83658;
+  border: 2px solid #c83658;
+  color: #fff;
+  margin-left: 4rem;
+  padding: 0.6rem 0.6rem 0.3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.aiResponse {
+  background-color: #ffffff;
+  height: 50px;
+  padding: 5px 10px;
+  padding-top: 20px;
+  padding-bottom: 25rem;
+  margin-top: 40px;
+  border-radius: 10px;
+  border-bottom: 2px #ffff;
+  overflow-y: scroll;
+  padding-left: 3rem;
+}
+
+.message {
+  /* background-color: #c83658; /* 36c8b4 */
+  /* color: #fff */
+  text-align: center;
+  padding: 0.3rem;
+  margin: 1rem;
+}
