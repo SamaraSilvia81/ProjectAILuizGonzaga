@@ -1,0 +1,17 @@
+Burnt Orange
+#C75104
+
+Sun
+#FBB310
+
+Sun Yellow
+#ffbb33
+
+Rose Red
+#c83658
+
+Brown Bramble
+#5C1104
+
+Quicksand
+#BF948F
