@@ -8,5 +8,8 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(150deg, #c83658 20%, #c25124 100%);
+    background-image: url('./assets/photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: linear-gradient(150deg, #c83658 20%, #c25124 100%);*/
 }

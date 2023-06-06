@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createMusic } from '../backend/api'
 import { BiRightArrow } from 'react-icons/bi';
 import styles from "./Home.module.css";
 
@@ -16,15 +17,7 @@ function Home() {
     try {
       setSendingData(true);
 
-      const response = await fetch('http://localhost:5000/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ text: inputText }),
-      });
-
-      const data = await response.json();
+      const response = await createMusic(inputText);
 
       if (response.ok) {
         setGeneratedText(data.generated_text);

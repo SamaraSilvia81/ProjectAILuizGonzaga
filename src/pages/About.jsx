@@ -18,9 +18,9 @@ function About() {
               <h3>Technologies Used</h3>
               <ul>
                 <li>React JS</li>
-                <li>Python</li>
+                <li>NodeJS</li>
                 <li>Flask</li>
-                <li>Tensorflow/Keras</li>
+                <li>TensorflowJS</li>
               </ul>
             </div>
           </div>

@@ -28,7 +28,7 @@
 
 .title span {
   margin-left: 0.5rem;
-  background-color: #c83658;
+  background-color: #5C1104;
   padding: 0.5rem 1rem 0.5rem;
   color: #fff;
 }
@@ -38,7 +38,7 @@
 }
 
 .description span {
-  color: #c83658 ;
+  color: #C75104 ;
   font-weight: 500;
 }
 
@@ -52,8 +52,4 @@
 
 .textTech ul li {
   margin-left: 1.1rem;
-}
-
-.arrowIcon {
-  color: #c83658 ;
 }
