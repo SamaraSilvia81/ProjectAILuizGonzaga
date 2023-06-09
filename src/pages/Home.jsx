@@ -16,13 +16,14 @@ function Home() {
   const handleSubmit = async () => {
     try {
       setSendingData(true);
-
+  
       const response = await createMusic(inputText);
-
-      if (response.ok) {
-        setGeneratedText(data.generated_text);
+  
+      if (response) {
+        const responseData = response; // Acessar o objeto retornado pelo backend
+        setGeneratedText(responseData); // Atualizar o estado com o texto retornado
       } else {
-        console.error('Error:', data.message);
+        console.error('Error:', response);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -30,6 +31,8 @@ function Home() {
       setSendingData(false);
     }
   };
+  
+  
 
   return (
     <div>
