@@ -6,6 +6,7 @@ import styles from "./Home.module.css";
 function Home() {
   
   const [inputText, setInputText] = useState('');
+  const [inputCount, setInputCount] = useState('');
   const [generatedText, setGeneratedText] = useState('');
   const [sendingData, setSendingData] = useState(false);
 
@@ -13,11 +14,15 @@ function Home() {
     setInputText(event.target.value);
   };
 
+  const handleInputCountChange = (event) => {
+    setInputCount(event.target.value);
+  };
+
   const handleSubmit = async () => {
     try {
       setSendingData(true);
   
-      const response = await createMusic(inputText);
+      const response = await createMusic(inputText, inputCount);
   
       if (response) {
         const responseData = response; // Acessar o objeto retornado pelo backend
@@ -40,12 +45,18 @@ function Home() {
         <div className={styles.containerInput}>
           <input
             id="input"
-            placeholder="Type a Theme of music or a phrase"
+            placeholder="Digite palavras para iniciar sua canção"
             value={inputText}
             onChange={handleInputChange}
           />
-          <button id="btnPlus" className={styles.plusButton} onClick={handleSubmit}>
-            <BiRightArrow className={styles.plusIcon} />
+          <input
+            placeholder="Digite a quantidade de caracteres que você quer"
+            type="number"
+            value={inputCount}
+            onChange={handleInputCountChange}
+          />
+          <button id="btnPlus" onClick={handleSubmit}>
+            <BiRightArrow/>
           </button>
         </div>
 
