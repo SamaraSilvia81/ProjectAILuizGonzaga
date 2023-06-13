@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: 'http://192.168.0.5:3000', // URL do serviço web do Railway
+  baseURL: 'https://projectia.onrender.com', // URL do serviço web do Railway
 });
 
 export const createMusic = (text, count) => {
